@@ -26,10 +26,12 @@ app.use(cors({
         if (!origin || allowedOrigins.includes(origin)) {
             callback(null, true);
         } else {
-            callback(new Error("CORS policy violation: Origin not allowed"));
+            callback(new Error(`CORS blocked for origin: ${origin}`));
         }
     },
-    credentials: true
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
 // mongodb server is slow so using cloudflare dns
