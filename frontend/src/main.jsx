@@ -11,6 +11,7 @@ import './index.css';
 import App from './App.jsx';
 
 axios.defaults.baseURL = import.meta.env.VITE_BACKEND_URL;
+axios.defaults.withCredentials = true;
 
 const router = createBrowserRouter(
   createRoutesFromElements(
