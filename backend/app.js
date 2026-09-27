@@ -61,6 +61,15 @@ app.use("/api/v1/admin", adminOrderRouter);
 // Razorpay payment routers
 app.use("/api/v1", paymentRouter);
 
+// Health check endpoint for UptimeRobot monitors
+app.get("/health", (req, res) => {
+    res.status(200).json({
+        status: "active",
+        timestamp: new Date().toISOString(),
+        uptime: process.uptime()
+    });
+});
+
 // Error handler middleware (must be registered after routes)
 app.use(errorHandler);
 
