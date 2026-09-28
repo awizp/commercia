@@ -1,34 +1,61 @@
 # Commercia
 
-Commercia is a full-stack ecommerce web platform designed for discovering, purchasing, and managing modern consumer goods and electronics. It provides an end to end shopping experience featuring catalog exploration, cart management, checkout with Razorpay payments, verified buyer review workflows, and a full administrative dashboard.
+Commercia is a full-stack ecommerce web platform designed for discovering, purchasing, and managing modern consumer goods and electronics. 
+
+It provides an end to end shopping experience featuring catalog exploration, cart management, checkout with Razorpay payments, verified buyer review workflows, and a full administrative dashboard.
 
 ---
 
 ## How It Works
 
 1. **Storefront & Catalog**: 
-    Browse products using real time search, category filtering, price sliders, and server side pagination.
+
+    - Browse products using real time search 
+    - Category filtering 
+    - Price sliders
+    - Server side pagination
+
 2. **Cart & Orders**: 
-    Add items with automatic stock validation, manage quantities, and proceed through checkout.
-3. **Verified Reviews**: 
-    Add, edit, or delete ratings and reviews exclusively after your order has reached the "Delivered" milestone.
+
+    - Add items with automatic stock validation
+    - Manage quantities
+    - Proceed through checkout
+
+3. **Verified Reviews**:
+
+    - Add, edit, or delete ratings and reviews exclusively after your order has reached the "Delivered" milestone
+
 4. **Admin Dashboard**: 
-    Manage inventory, upload product images to Cloudinary, track order fulfillment, update user roles, and moderate reviews.
+
+    - Manage inventory
+    - Upload product images to Cloudinary
+    - Track order fulfillment
+    - Update user roles
+    - Moderate reviews
 
 ---
 
 ## Tech Stack
 
 - **Frontend**: 
-    React, Redux Toolkit, React Router, Tailwind CSS, Vite, Lucide React
+
+        React, Redux Toolkit, React Router, Tailwind CSS, Vite, Lucide React
+
 - **Backend**: 
-    Node.js, Express.js
+
+        Node.js, Express.js
+
 - **Database**: 
-    MongoDB Atlas with Mongoose
+
+        MongoDB Atlas with Mongoose
+
 - **Cloud Storage & Payments**: 
-    Cloudinary, Razorpay
-- **Authentication**: 
-    JWT via HTTP only cookies
+
+        Cloudinary, Razorpay
+
+- **Authentication**:
+ 
+        JWT via HTTP only cookies
 
 ---
 
